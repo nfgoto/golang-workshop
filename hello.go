@@ -25,7 +25,7 @@ func main() {
 	index := rand.Intn(len(helloList))
 
 	// Call a function and receive multiple return values
-	msg, err := hello(index)
+	msg, err := greet(index)
 
 	// Handle any errors
 	if err != nil {
@@ -36,7 +36,7 @@ func main() {
 	fmt.Println(msg)
 }
 
-func hello(index int) (string, error) {
+func greet(index int) (string, error) {
 	if index < 0 || index > len(helloList)-1 {
 		// create an error, convert int type  to string
 		return "", errors.New("out of range: " + strconv.Itoa(index))
