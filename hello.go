@@ -1,4 +1,4 @@
-package main
+package hello
 
 import (
 	"errors"
@@ -17,7 +17,7 @@ var helloList = []string{
 	"Привет, мир",
 }
 
-func main() {
+func Greet() {
 	// Seed random number generator using the current time
 	rand.Seed(time.Now().UnixNano())
 
