@@ -15,10 +15,6 @@ func main() {
 
 	fmt.Println(count)
 
-	count++
-
-	fmt.Println(count)
-
 	count--
 
 	fmt.Println(count)
@@ -26,5 +22,15 @@ func main() {
 	count -= 5
 
 	fmt.Println(count)
+
+	count *= 5
+
+	fmt.Println(count)
+
+	name := "Toto"
+
+	name += " Bosan"
+
+	fmt.Println(name)
 
 }
