@@ -1,0 +1,9 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	fmt.Println("init")
+} 1.10/exercise/main.go 1.10/activity/main.go 1.11/exercise/main.go 1.11/activity/main.go 1.12/exercise/main.go 1.12/activity/main.go 1.13/exercise/main.go 1.13/activity/main.go 1.14/exercise/main.go 1.14/activity/main.go 1.15/exercise/main.go 1.15/activity/main.go 1.16/exercise/main.go 1.16/activity/main.go 1.17/exercise/main.go 1.17/activity/main.go 1.18/exercise/main.go 1.18/activity/main.go 1.19/exercise/main.go 1.19/activity/main.go
