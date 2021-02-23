@@ -1,14 +1,13 @@
 package main
 
-import(
-
+import (
 	"fmt"
-
 )
 
 func main() {
 
-	fmt.Println("init")
+	for i := 0; i < 5; i++ {
+		fmt.Println(i)
+	}
 
 }
-
