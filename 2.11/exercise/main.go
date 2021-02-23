@@ -1,14 +1,24 @@
 package main
 
-import(
-
+import (
 	"fmt"
-
+	"math/rand"
 )
 
 func main() {
+	for {
+		r := rand.Intn(8)
 
-	fmt.Println("init")
+		if r%3 == 0 {
+			fmt.Println("Skip")
+			continue
+		}
 
+		if r%2 == 0 {
+			fmt.Println("Stop")
+			break
+		}
+
+		println(r)
+	}
 }
-
