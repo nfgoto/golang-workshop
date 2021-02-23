@@ -1,14 +1,18 @@
 package main
 
-import(
-
+import (
 	"fmt"
-
 )
 
 func main() {
+	config := map[string]string{
+		"debug":    "1",
+		"logLevel": "leve",
+		"version":  "1.2.1",
+	}
 
-	fmt.Println("init")
+	for key, value := range config {
+		fmt.Println(key, "=", value)
+	}
 
 }
-

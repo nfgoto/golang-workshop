@@ -1,14 +1,15 @@
 package main
 
-import(
-
+import (
 	"fmt"
-
 )
 
 func main() {
+	// looping over slice of strings
 
-	fmt.Println("init")
+	names := []string{"toto", "titi", "tutu"}
 
+	for i := 0; i < len(names); i++ {
+		fmt.Println(names[i])
+	}
 }
-
