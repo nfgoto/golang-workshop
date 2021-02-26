@@ -28,4 +28,9 @@ func main() {
 
 	fmt.Println("Big Int : ", bigA.String())
 
+	// byte is an alias for uint8, used when dealing with I/O
+	var bb byte = 24
+
+	fmt.Printf("%v == %#v \n", bb, bb)
+
 }
