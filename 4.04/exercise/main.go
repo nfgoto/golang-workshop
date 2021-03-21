@@ -1,14 +1,17 @@
 package main
 
-import(
+import "fmt"
 
-	"fmt"
-
-)
-
-func main() {
-
-	fmt.Println("init")
-
+func buildMessageFromArray() string {
+	arr := [...]string{
+		"ready",
+		"Get",
+		"Go",
+		"to",
+	}
+	return fmt.Sprintln(arr[1], arr[0], arr[3], arr[2])
 }
 
+func main() {
+	fmt.Print(buildMessageFromArray())
+}
