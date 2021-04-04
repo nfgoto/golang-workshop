@@ -10,7 +10,6 @@ func getPassedArgs(minArgs int) []string {
 		fmt.Printf("At least %v arguments are needed]n", minArgs)
 		os.Exit(1)
 	}
-
 	var args []string
 	for i := 1; i < len(os.Args); i++ {
 		args = append(args, os.Args[i])
