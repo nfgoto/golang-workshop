@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"os"
+	"log"
 )
 
 type Point struct {
@@ -37,13 +37,14 @@ func NewSquare(x, y, length int) (*Square, error) {
 }
 
 func main() {
-	s1, err := NewSquare(3, 6, 2)
+	s1, err := NewSquare(3, 6, 5)
 	if err != nil {
-		fmt.Println("Error:", err)
-		os.Exit(1)
+		// equiv to Printf then Exit(1) - log contains timestamp
+		log.Fatalf("ERROR:%v", err)
 	}
 
 	fmt.Printf("s1:%+v\n", s1)
 	s1.Center.Move(-2, -1)
 	fmt.Printf("s1:%+v\n", s1)
+	fmt.Println("s1 area:", s1.GetArea())
 }
